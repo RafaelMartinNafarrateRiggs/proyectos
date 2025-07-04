@@ -2,91 +2,122 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV – Rafael Martin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --color-bg: #f5f2ed;
+      --color-bg: #fdfcfb;
       --color-text: #3e2f1c;
-      --color-primary: #6b4c36;
       --color-accent: #a67c52;
     }
     body {
-      margin: 0;
+      background: var(--color-bg);
       font-family: 'Inter', sans-serif;
-      background-color: var(--color-bg);
       color: var(--color-text);
-      line-height: 1.6;
-      padding: 3rem 1.5rem;
-      max-width: 860px;
-      margin: auto;
+      margin: 0;
+      padding: 3rem 1rem;
+      max-width: 840px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    h1, h2 {
-      color: var(--color-primary);
-      margin-bottom: 0.5rem;
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      gap: 2rem;
     }
-    h1 {
-      font-size: 2.2rem;
-      border-bottom: 2px solid var(--color-accent);
-      padding-bottom: 0.3rem;
+    .foto {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--color-accent);
     }
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 2.5rem;
+    .datos h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .datos p {
+      margin: 0.25rem 0;
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+    section {
+      margin-top: 2rem;
+    }
+    section h2 {
+      font-size: 1.2rem;
+      border-bottom: 1px solid var(--color-accent);
+      padding-bottom: 4px;
+      margin-bottom: 0.8rem;
       font-weight: 600;
     }
-    p, li {
+    ul {
+      margin: 0.3rem 0 1.5rem 1.2rem;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
       font-weight: 300;
     }
-    ul {
-      padding-left: 1.2rem;
-      margin-top: 0.2rem;
-    }
-    .contacto {
-      font-size: 0.95rem;
-      color: #7c6955;
-      margin-bottom: 2rem;
+    strong {
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <h1>Rafael Martin</h1>
-  <div class="contacto">
-    Cabo San Lucas, BCS, México<br />
-    ✉︎ rafael.martin@email.com<br />
-    ☎︎ +52 1 624 XXX XXXX<br />
-    GitHub: github.com/rafaelmartinnafarrateriggs
-  </div>
+  <header>
+    <img src="foto.jpg" alt="Foto de Rafael Martin" class="foto" />
+    <div class="datos">
+      <h1>Rafael Martin</h1>
+      <p>Cabo San Lucas, BCS, México</p>
+      <p>✉︎ rafael.martin@email.com · ☎︎ +52 1 624 XXX XXXX</p>
+      <p>GitHub: github.com/rafaelmartinnafarrateriggs</p>
+    </div>
+  </header>
 
-  <h2>Perfil Profesional</h2>
-  <p>Profesional multidisciplinario con experiencia en arquitectura funcional, diseño web interactivo y optimización de recursos en entornos de alta demanda térmica. Enfocado en soluciones eficientes, duraderas y visualmente elegantes, tanto en proyectos físicos como digitales.</p>
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p>Profesional multidisciplinario con experiencia en arquitectura funcional, diseño web interactivo y optimización de recursos en entornos de alta demanda térmica. Enfocado en soluciones eficientes, duraderas y visualmente elegantes, tanto en proyectos físicos como digitales.</p>
+  </section>
 
-  <h2>Experiencia Laboral</h2>
-  <p><strong>Desarrollador Front-End / Arquitecto Independiente</strong><br />
-  Freelance · 2023–Presente</p>
-  <ul>
-    <li>Diseño e implementación de sitios web modulares usando HTML, CSS y GitHub Pages.</li>
-    <li>Diseño y supervisión de techos de concreto en clima cálido, priorizando eficiencia térmica.</li>
-    <li>Resolución de errores técnicos y redacción de documentación funcional.</li>
-  </ul>
+  <section>
+    <h2>Experiencia Laboral</h2>
+    <p><strong>Desarrollador Front-End / Arquitecto Independiente</strong><br />
+    Freelance · 2023–Presente</p>
+    <ul>
+      <li>Diseño e implementación de sitios web modulares usando HTML, CSS y GitHub Pages.</li>
+      <li>Diseño y supervisión de techos de concreto en clima cálido, priorizando eficiencia térmica.</li>
+      <li>Resolución de errores técnicos y redacción de documentación funcional.</li>
+    </ul>
+  </section>
 
-  <h2>Educación</h2>
-  <p><strong>Licenciatura en Arquitectura</strong><br />
-  Universidad Autónoma de Baja California Sur – 2017–2022</p>
+  <section>
+    <h2>Educación</h2>
+    <p><strong>Licenciatura en Arquitectura</strong><br />
+    Universidad Autónoma de Baja California Sur – 2017–2022</p>
+  </section>
 
-  <h2>Habilidades</h2>
-  <ul>
-    <li>Diseño web responsivo (HTML, CSS, UI/UX minimalista)</li>
-    <li>Maquetación interactiva y optimización de imágenes</li>
-    <li>Construcción técnica y remodelación funcional de espacios</li>
-    <li>Redacción clara y estructuración de conocimiento</li>
-  </ul>
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Diseño web responsivo (HTML, CSS, UI/UX minimalista)</li>
+      <li>Maquetación interactiva y optimización de imágenes</li>
+      <li>Construcción técnica y remodelación funcional de espacios</li>
+      <li>Redacción clara y estructuración de conocimiento</li>
+    </ul>
+  </section>
 
-  <h2>Idiomas</h2>
-  <ul>
-    <li>Español – Nativo</li>
-    <li>Inglés – Avanzado</li>
-  </ul>
+  <section>
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español – Nativo</li>
+      <li>Inglés – Avanzado</li>
+    </ul>
+  </section>
 </body>
 </html>
